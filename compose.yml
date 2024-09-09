@@ -1,7 +1,7 @@
 services:
   macos:
-    image: marbeast823/macos
-    container_name: macos
+    image: marbeast823/macos1
+    container_name: macos1
     environment:
       VERSION: "sonoma"
       RAM_SIZE: "8G"
