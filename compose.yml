@@ -1,11 +1,15 @@
 services:
-  osx:
-    image: dockurr/macos
+  macos:
+    image: marbeast823/macos
     container_name: macos
     environment:
-      VERSION: "ventura"
+      VERSION: "sonoma"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
+      ARGUMENTS: "-device usb-host,vendorid=0x1234,productid=0x1234"
     devices:
       - /dev/kvm
+      - /dev/bus/usb
     cap_add:
       - NET_ADMIN
     ports:
